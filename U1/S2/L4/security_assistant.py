@@ -26,7 +26,7 @@ def main():
     # Utilizziamo 'client.chats.create' anziché una semplice generazione singola.
     # Questo permette al modello di ricordare la cronologia della conversazione.
     chat = client.chats.create(
-        model="gemini-3.8-flash", # Il modello linguistico leggero e veloce di Google
+        model="gemini-3.5-flash-lite", # Il modello linguistico leggero e veloce di Google
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
             temperature=0.3, # Valore basso (0.3): rende le risposte più tecniche, precise e focalizzate
